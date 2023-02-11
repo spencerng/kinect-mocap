@@ -1,6 +1,6 @@
 # Kinect Depth Motion Capture
 
-Motion capture scripts used for *Macbeth in Space*
+Motion capture scripts for Azure Kienct. Used to capture apparition effects for *Macbeth in Space*
 
 ## Usage
 
@@ -9,3 +9,4 @@ Motion capture scripts used for *Macbeth in Space*
 3. Specify the `CAPTURE` and `FILENAME` variables in `draw.py`
 4. Run `python3 draw.py`, closing the window when capturing is done
 5. Convert the image folders to videos, running `ffmpeg -framerate 30 -pattern_type glob -i '<folder>/*.png' -c:v libx264 -pix_fmt yuv420p <folder>.mp4` from `images/`
+6. Postprocess video (keying out whites/blacks) using video editing software of your choice
